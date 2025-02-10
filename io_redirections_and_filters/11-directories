@@ -1,2 +1,2 @@
 #!/bin/bash
-dir_count=$(find . -mindepth 1 | wc -l)
+echo "Directories:$(find . -mindepth 1 | wc -l)"
