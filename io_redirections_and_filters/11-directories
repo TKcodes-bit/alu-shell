@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Directories:$(find . -mindepth 1 | wc -l)"
+echo "$(find . -mindepth 1 | wc -l)"
