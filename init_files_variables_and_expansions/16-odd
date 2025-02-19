@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d$'\n' -f1- --output-delimiter=$'\n' --complement
+nl -ba | grep -E '^[0-9]*[13579] '
