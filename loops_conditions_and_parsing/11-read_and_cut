@@ -2,7 +2,6 @@
 # This script extracts and displays username, user ID, and home directory 
 from /etc/passwd.
 
-while IFS=: read -r username password uid gid comment home shell; do
+while IFS=: read -r username _ uid _ _ home _; do
   echo "Username: $username, UID: $uid, Home: $home"
 done < /etc/passwd
-
