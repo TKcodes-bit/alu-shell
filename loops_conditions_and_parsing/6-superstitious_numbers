@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# This script displays numbers from 1 to 20, with special messages for 4, 
-9, and 17.
+# This script displays numbers from 1 to 20, with special messages for 4, 9, and 17.
 
 count=1
 
