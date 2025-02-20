@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Read /etc/passwd line by line using while + IFS
-while IFS=: read -r username password uid gid comment home shell; do
-  echo -e "The user $username is part of the $gid gang, lives in $home and 
-\n"
-  echo -e "rides $shell. USER ID's place is protected by the passcode 
-$password, \nmore"
-  echo -e "info about the user here: $comment\n"
-done < /etc/passwd
