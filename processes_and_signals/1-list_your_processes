@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 #SCRIPT PRINTS processes in a aadevice
-ps aux && echo "" && echo "Process hierarchy:" && pstree -a
-
+ps -eo user,start,command
