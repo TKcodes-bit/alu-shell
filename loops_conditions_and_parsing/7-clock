@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# This script displays the time for 12 hours and 59 minutes in the 
-required format.
+# This script displays the time for 12 hours and 59 minutes in the required format.
 
 hour=0
 
