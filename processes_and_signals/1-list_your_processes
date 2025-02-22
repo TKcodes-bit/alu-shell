@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-
-# Display a list of currently running processes
-
 # Display all processes for all users, including those without a TTY
 ps -eo user,pid,ppid,%cpu,%mem,stat,start,time,cmd --sort=-%cpu | head -n 20
 
