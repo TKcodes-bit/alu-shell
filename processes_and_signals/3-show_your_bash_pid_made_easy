@@ -3,8 +3,8 @@
 # Iterate through all process directories in /proc
 for pid in /proc/[0-9]*; do
     pid_number=$(basename "$pid")
-    if [[ -f "$pid/cmdline" ]]; then
-        cmd=$(tr '\0' ' ' < "$pid/cmdline")
+    if [[ -f "$pid/exe" ]]; then
+        cmd=$(readlink -f "$pid/exe")
         if [[ "$cmd" == *bash* ]]; then
             echo "$pid_number $cmd"
         fi
