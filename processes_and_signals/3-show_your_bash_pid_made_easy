@@ -5,7 +5,7 @@ for pid in /proc/[0-9]*; do
     pid_number=$(basename "$pid")
     if [[ -f "$pid/exe" ]]; then
         cmd=$(readlink -f "$pid/exe")
-        if [[ "$cmd" == */bin/bash ]]; then
+        if [[ "$cmd" == */usr/bin/bash ]]; then
             echo "$pid_number $cmd"
         fi
     fi
